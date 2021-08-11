@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Radio Gaga</title>
+</head>
+
+<body>
+    <div class="wrapper">
+    <div class="carousel"> <!--contains all carousel item-->
+         <!--carousel button LEFT -->
+        <button class="carousel-btn carousel-left-btn is-hidden">
+                <i class='fa fa-arrow-circle-left left'></i>
+        </button><!--ends button left-->
+
+        <div class="carousel-track-container"><!--contains all track elements-->
+            <!--update this re array in javascripy // @const track -->
+            <ul class="carousel-track"><!--contains list/carousel items-->
+                <li class="carousel-slide carousel-image current-slide">
+                    <img src="images/5.jpg" alt="">
+                </li>
+
+                <li class="carousel-slide carousel-image">
+                    <img src="images/2.jpg" alt="">
+                </li>
+
+                <li class="carousel-slide carousel-image">
+                    <img src="images/3.jpg" alt="">
+                </li>
+
+                <li class="carousel-slide carousel-image">
+                    <img src="images/1.jpg" alt="">
+      
+                </li>
+            </ul> <!--ends list/carousel track-->
+        </div><!--ends carousel-track-container-->
+
+            <!--carousel button RIGHT -->
+            <button class="carousel-btn carousel-right-btn">
+                <i class="fa fa-arrow-circle-right right"></i>
+            </button><!--ends-->
+
+            <div class="carousel-nav"><!--nav/radio-buttons-->
+                <button class="carousel-indicator current-slide"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+            </div><!--ends-->
+</div><!--ends carousel-->
+</div><!--ends wrapper-->
+
+
+    <script src="radio.js"></script>
+</body>
+</html>

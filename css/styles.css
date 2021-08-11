@@ -1,0 +1,146 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #050542;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  border: 4px solid pink;
+}
+
+/*////////////
+carousel slides
+/*/
+.carousel {
+  position: relative;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+  padding: .5em;
+}
+
+.carousel-image {
+  max-width: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.carousel-track-container {
+  background-color: rgba(9, 48, 119, 0.479);
+  height: 80%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  -webkit-transition: transform 250ms ease-in;
+  -moz-transition: transform 250ms ease-in;
+  -ms-transition: transform 250ms ease-in;
+  -o-transition: transform 250ms ease-in;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/*>>>>>>>
+carousel arrow buttons
+/*/
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background: transparent;
+  border: fuchsia;
+  font-size: 3em;
+  color: gold;
+  cursor: pointer;
+}
+
+.carousel-left-btn {
+  left: -2%;
+  z-index: 1;
+}
+
+.carousel-right-btn {
+  right: -2%;
+  z-index: 1;
+}
+
+/*.....
+carousel RADIO btns
+/*.....*/
+.carousel-nav {
+  background: hotpink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .3em;
+}
+
+.carousel-nav .carousel-indicator {
+  border: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: cornsilk;
+  margin: 0 .5em;
+  cursor: pointer;
+}
+
+.carousel-nav .current-slide {
+  background: cyan;
+}
+
+.is-hidden {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
