@@ -10,9 +10,25 @@ body {
     padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+   font-family: 'Kanit', sans-serif;
+}
+
 body {
     background: rgb(5, 5, 66);
+    font-size: 2.1rem;
 }
+
+
+h1 {
+    font-size: 4rem;
+    color:hsl(308, 97%, 54%);
+    margin-top: 0;
+    padding: .3em 0 0;
+}
+
+
 img {
     max-width: 100%;
 }
@@ -20,8 +36,12 @@ img {
 .wrapper {
     max-width:100%;
     width:90%;
+    min-height:100vh;
     margin: 0 auto;
-   border: 4px solid pink;
+    border: 1px solid rgb(247, 57, 89);
+    text-align: center;
+   
+   
 }
 /*////////////
 carousel slides
@@ -30,27 +50,32 @@ carousel slides
 .carousel {
     position: relative;
     height: 600px;
-    width: 80%;
+    width: 90%;
     margin:0 auto;
     padding: .5em;
+   
 }
 
 .carousel-image {
     max-width: 100%;
     width: 70%;
     margin: 0 auto;
+    // overflow: hidden;
+   
  }
 
 .carousel-slide img {
-    width: 100%;
+    // max-width: 100%;
+    width:100%;
     height:100%;
-    object-fit: contain; //crops picture.
-   object-position: center;
-   
-}
+   object-fit: contain; //crops picture.
+    //  object-fit: cover; 
+    object-position: center;
+ }
+
 .carousel-track-container {
     background-color: rgba(9, 48, 119, 0.479);
-    height: 80%;
+    height: 100%;
     position: relative;
     overflow: hidden; //imgs stacked 
     //allowing scroll-thru,
@@ -88,10 +113,16 @@ carousel arrow buttons
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     background: transparent;
-    border: fuchsia;
+    border: none;
     font-size:3em;
-    color:gold;
+    color:hsl(231, 69%, 55%);
     cursor:pointer;
+
+    &:hover,
+    &:focus{
+        color: hsl(83, 97%, 54%);
+    }
+ 
 }
 
 .carousel-left-btn {
@@ -109,18 +140,18 @@ carousel RADIO btns
 /*.....*/
 
 .carousel-nav {
-    background: hotpink;
+    // background: hotpink;
     display:flex;
     justify-content: center;
     padding: .3em;
 
         .carousel-indicator{
             border:0;
-            border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
+            // border-radius: 50%;
+            // -webkit-border-radius: 50%;
+            // -moz-border-radius: 50%;
+            // -ms-border-radius: 50%;
+            // -o-border-radius: 50%;
             width:15px;
             height: 15px;
             background: cornsilk;
@@ -129,7 +160,7 @@ carousel RADIO btns
         }
 
         .current-slide {
-            background: cyan;
+            background: hsl(241, 69%, 55%);
             }
         
 

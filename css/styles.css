@@ -9,8 +9,21 @@ body {
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+  font-family: 'Kanit', sans-serif;
+}
+
 body {
   background: #050542;
+  font-size: 2.1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fb18dd;
+  margin-top: 0;
+  padding: .3em 0 0;
 }
 
 img {
@@ -20,8 +33,10 @@ img {
 .wrapper {
   max-width: 100%;
   width: 90%;
+  min-height: 100vh;
   margin: 0 auto;
-  border: 4px solid pink;
+  border: 1px solid #f73959;
+  text-align: center;
 }
 
 /*////////////
@@ -30,7 +45,7 @@ carousel slides
 .carousel {
   position: relative;
   height: 600px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: .5em;
 }
@@ -52,7 +67,7 @@ carousel slides
 
 .carousel-track-container {
   background-color: rgba(9, 48, 119, 0.479);
-  height: 80%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -92,10 +107,14 @@ carousel arrow buttons
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   background: transparent;
-  border: fuchsia;
+  border: none;
   font-size: 3em;
-  color: gold;
+  color: #3d55db;
   cursor: pointer;
+}
+
+.carousel-btn:hover, .carousel-btn:focus {
+  color: #a4fb18;
 }
 
 .carousel-left-btn {
@@ -112,7 +131,6 @@ carousel arrow buttons
 carousel RADIO btns
 /*.....*/
 .carousel-nav {
-  background: hotpink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,11 +142,6 @@ carousel RADIO btns
 
 .carousel-nav .carousel-indicator {
   border: 0;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   width: 15px;
   height: 15px;
   background: cornsilk;
@@ -137,7 +150,7 @@ carousel RADIO btns
 }
 
 .carousel-nav .current-slide {
-  background: cyan;
+  background: #403ddb;
 }
 
 .is-hidden {
